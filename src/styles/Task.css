@@ -1,0 +1,109 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-checkbox.checked {
+  background-color: #0066ff;
+  border-color: #0066ff;
+  position: relative;
+}
+
+.task-checkbox.checked::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.task-content {
+  flex: 1;
+  color: #000; /* Ensuring text is black */
+}
+
+.task-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000; /* Ensuring text is black */
+  margin-bottom: 4px;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-content p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.task-section {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000; /* Ensuring section headers are black */
+  margin-bottom: 12px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar svg {
+  width: 20px;
+  height: 20px;
+  color: #666;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #000; /* Ensuring input text is black */
+}
+
+.search-bar input::placeholder {
+  color: #999;
+}
+
+.tasks-container {
+  padding: 8px 0;
+}

@@ -4,6 +4,7 @@ import Tasks from './pages/Tasks';
 import AddTask from './pages/AddTask';
 import './styles/App.css';
 import './styles/Sidebar.css';
+import './styles/Task.css';
 
 function App() {
   const [tasks, setTasks] = useState([
