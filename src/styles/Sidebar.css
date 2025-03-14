@@ -63,10 +63,9 @@
 }
 
 .sidebar-add-task {
-  margin-top: auto;
   padding: 14px;
-  background-color: #0066ff;
-  color: white;
+  background-color: transparent;
+  color: #4a5568;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -75,14 +74,16 @@
   align-items: center;
   gap: 12px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.2s ease;
 }
 
 .sidebar-add-task:hover {
-  background-color: #0052cc;
+  background-color: #f7fafc;
+  color: #2d3748;
 }
 
 .sidebar-add-task svg {
   width: 24px;
   height: 24px;
+  color: currentColor;
 }

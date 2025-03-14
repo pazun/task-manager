@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import '../styles/AddTask.css';
+
 function AddTask({ onAddTask }) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -21,9 +23,9 @@ function AddTask({ onAddTask }) {
   };
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
-        <h2 className="modal-header">Add New Task</h2>
+    <div className="add-task-page">
+      <div className="add-task-container">
+        <h2 className="add-task-header">Add New Task</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="title">Title</label>
@@ -55,7 +57,7 @@ function AddTask({ onAddTask }) {
               <option value="HOUSE">House</option>
             </select>
           </div>
-          <div className="modal-actions">
+          <div className="form-actions">
             <button type="button" className="button button-secondary" onClick={() => onAddTask(null)}>
               Cancel
             </button>
