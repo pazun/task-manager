@@ -1,0 +1,37 @@
+/* App-specific styles */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 24px;
+  background-color: #f8f9fa;
+}
+
+.add-task-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.add-task-button:hover {
+  background-color: #0052cc;
+}
+
+.add-task-button svg {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,88 @@
+.sidebar {
+  width: 280px;
+  background-color: white;
+  padding: 24px;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #0066ff;
+  margin-bottom: 20px;
+}
+
+.logo svg {
+  width: 36px;
+  height: 36px;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  color: #4a5568;
+  text-decoration: none;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-item svg {
+  width: 24px;
+  height: 24px;
+  color: currentColor;
+}
+
+.nav-item:hover {
+  background-color: #f7fafc;
+  color: #2d3748;
+}
+
+.nav-item.active {
+  background-color: #ebf5ff;
+  color: #0066ff;
+}
+
+.sidebar-add-task {
+  margin-top: auto;
+  padding: 14px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebar-add-task:hover {
+  background-color: #0052cc;
+}
+
+.sidebar-add-task svg {
+  width: 24px;
+  height: 24px;
+}
